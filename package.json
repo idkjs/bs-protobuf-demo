@@ -1,16 +1,17 @@
 {
   "name": "bs-protobuf-demo",
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.19.0",
     "bs-ocaml-protoc-json": "^0.x.x",
-    "bs-platform": "^1.x.x",
-    "express": "^4.15.2"
+    "bs-platform": "^9.0.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0",
-    "babel-preset-env": "^1.2.1"
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2"
   },
   "scripts": {
     "gen": "ocaml-protoc -bs -ml_out src src/messages.proto",
